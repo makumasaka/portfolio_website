@@ -1,7 +1,6 @@
 import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
-export default function Experience()
-{
+export default function Experience() {
 
     const computer = useGLTF('https://threejs-journey.com/resources/models/macbook_model.gltf')
 
@@ -45,7 +44,7 @@ export default function Experience()
                     </Html>
                 </primitive>
                 <Text
-                    font="./bangers-v20-latin-regular.woff"
+                    font="/bangers-v20-latin-regular.woff"
                     fontSize={0.6}
                     position={[2, 0.75, 0.65]}
                     rotation-y={-1.25}
@@ -83,3 +82,4 @@ export default function Experience()
 
     </>
 }
+
