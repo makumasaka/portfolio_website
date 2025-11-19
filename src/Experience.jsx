@@ -1,4 +1,4 @@
-import { Text,Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
+import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
 export default function Experience()
 {
@@ -41,7 +41,7 @@ export default function Experience()
                         position={[0, 1.56, -1.4]}
                         rotation-x={-0.266}
                     >
-                        <iframe src="https://bruno-simon.com/html/"></iframe>
+                        <iframe src="https://makotomoseskumasaka.com/html/"></iframe>
                     </Html>
                 </primitive>
                 <Text
@@ -54,6 +54,23 @@ export default function Experience()
                 >
                     Mako Kumasaka
                 </Text>
+                <Html
+                    transform
+                    position={[0, -0.6, 0.6]}
+                    rotation-x={Math.PI / - 2}
+                    scale={2.5}
+                    distanceFactor={1.5}
+                    occlude
+                >
+                    <a 
+                        href="https://makotomoseskumasaka.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="floating-button"
+                    >
+                        Visit Portfolio
+                    </a>
+                </Html>
             </Float>
         </PresentationControls>
 
