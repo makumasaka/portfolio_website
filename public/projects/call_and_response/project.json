@@ -1,0 +1,14 @@
+{
+  "title": "Call & Response",
+  "description": "Album artwork for the Call & Response music project.",
+  "tags": ["design"],
+  "type": "lightbox",
+  "thumbnail": "CallAndResponse_Detail.png",
+  "thumbnailScale": 1,
+  "thumbnailPosition": "center",
+  "year": "2022",
+  "order": 9,
+  "media": [
+    "CallAndResponseSpread.png"
+  ]
+}

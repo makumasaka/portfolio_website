@@ -1,0 +1,16 @@
+{
+  "title": "Mars XR Experience",
+  "description": "Extended reality experience visualizing Mars missions and orbital transfer vehicles.",
+  "tags": ["3d", "case-studies", "interactive", "design", "development", "mobile"],
+  "type": "casestudy",
+  "thumbnail": "HeroShot.png",
+  "year": "2022",
+  "order": 4,
+  "sections": [
+    { "type": "image", "src": "HeroShot.png" },
+    { "type": "image", "src": "Screenshot 2022-08-17 073718.png" },
+    { "type": "image", "src": "Screen Shot 2022-08-27 at 1.53.26 PM.png" },
+    { "type": "image", "src": "pasted image 0.png" },
+    { "type": "video", "src": "OTV.mp4" }
+  ]
+}

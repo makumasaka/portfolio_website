@@ -1,0 +1,15 @@
+{
+  "title": "Glass Bubbles",
+  "description": "3D generative art exploring transparency and light refraction.",
+  "tags": ["3d", "design", "personal-project"],
+  "type": "lightbox",
+  "thumbnail": "BubblesStill01.png",
+  "thumbnailScale": 1,
+  "thumbnailPosition": "bottom",
+  "year": "2023",
+  "order": 6,
+  "media": [
+    "Bubbles.gif",
+    "BubblesStill01.png"
+  ]
+}

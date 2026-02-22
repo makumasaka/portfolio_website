@@ -1,0 +1,15 @@
+{
+  "title": "Sputnik Poster",
+  "description": "Commemorative poster design celebrating the Sputnik satellite.",
+  "tags": ["design", "personal-project"],
+  "type": "lightbox",
+  "thumbnail": "Detail01.png",
+  "thumbnailScale": 1,
+  "thumbnailPosition": "top",
+  "year": "2022",
+  "order": 12,
+  "media": [
+    "Detail01.png",
+    "Sputnik_Poster_1-01 (1).jpg"
+  ]
+}

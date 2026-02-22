@@ -1,0 +1,13 @@
+{
+  "title": "Galaxy Generator",
+  "description": "Procedural galaxy generation using creative coding and WebGL.",
+  "tags": ["development", "3d", "web", "interactive", "personal-project"],
+  "type": "carousel",
+  "thumbnail": "Galaxy02.png",
+  "thumbnailScale": 1.5,
+  "year": "2023",
+  "order": 5,
+  "media": [
+    "Triptych.png"
+  ]
+}

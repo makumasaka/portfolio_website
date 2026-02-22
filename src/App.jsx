@@ -1,14 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './components/Landing'
+import CaseStudy from './components/CaseStudy'
 import './styles/style.css'
 
 function App() {
   return (
-    <div className="app">
-      <div className="card">
-        <p className="message">The Made-by-Mako portfolio website is under construction. Come back soon :)</p>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/project/:id" element={<CaseStudy />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 export default App
-

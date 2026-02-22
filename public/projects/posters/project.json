@@ -1,0 +1,15 @@
+{
+  "title": "Poster Series",
+  "description": "Typographic poster series exploring composition and visual rhythm.",
+  "tags": ["design", "personal-project"],
+  "type": "carousel",
+  "thumbnail": "Response_and Reponse_Compiled_2_Final.jpg",
+  "thumbnailScale": 1.25,
+  "thumbnailPosition": "center",
+  "year": "2022",
+  "order": 10,
+  "media": [
+    "Call_and_Response_Compiled_Final.jpg",
+    "Response_and Reponse_Compiled_2_Final.jpg"
+  ]
+}

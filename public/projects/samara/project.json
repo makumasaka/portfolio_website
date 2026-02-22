@@ -1,0 +1,18 @@
+{
+  "title": "Samara Hummingbird",
+  "description": "3D visualization and rendering for Samara's Hummingbird spacecraft.",
+  "tags": ["3d", "design"],
+  "type": "carousel",
+  "thumbnail": "Hummingbird_HeroDeployed_SilverPayload_BG.png",
+  "thumbnailScale": 1.5,
+  "thumbnailPosition": "left 95% top 50%",
+  "year": "2023",
+  "order": 2,
+  "media": [
+    "Hummingbird_HeroFolding_4k.png",
+    "Hummingbird_HeroFlip_NoPayload_BG.png",
+    "Hummingbird_HeroStowed_NoPayload_BG.png",
+    "Hummingbird_Fairing_SilverPayload_BG.png",
+    "Hummingbird_Deployed_TwoArray_WhiteBG.png"
+  ]
+}

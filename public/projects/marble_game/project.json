@@ -1,0 +1,12 @@
+{
+  "title": "Marble Game",
+  "description": "Browser-based 3D marble game built with Three.js.",
+  "tags": ["development", "web", "3d", "design", "interactive", "personal-project"],
+  "type": "lightbox",
+  "thumbnail": "Screenshot01.png",
+  "year": "2023",
+  "order": 7,
+  "media": [
+    "Screenshot01.png"
+  ]
+}

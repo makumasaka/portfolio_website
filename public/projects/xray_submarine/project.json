@@ -1,0 +1,13 @@
+{
+  "title": "X-Ray Submarine",
+  "description": "3D visualization with transparent rendering of a submarine interior.",
+  "tags": ["3d", "interactive", "development", "personal-project", "web"],
+  "type": "lightbox",
+  "thumbnail": "ScreenShot02.png",
+  "year": "2023",
+  "order": 8,
+  "media": [
+    "ScreenShot01.png",
+    "ScreenShot02.png"
+  ]
+}

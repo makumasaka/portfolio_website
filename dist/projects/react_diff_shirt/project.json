@@ -1,0 +1,15 @@
+{
+  "title": "React Diff Shirt",
+  "description": "Custom t-shirt design inspired by React's diffing algorithm.",
+  "tags": ["design", "personal-project"],
+  "type": "carousel",
+  "thumbnail": "Tshirt_Photoshoot_2.jpg",
+  "thumbnailScale": 1.3,
+  "thumbnailPosition": "center 40%",
+  "year": "2023",
+  "order": 11,
+  "media": [
+    "Tshirt_Photoshoot.jpg",
+    "Tshirt_Photoshoot_2.jpg"
+  ]
+}

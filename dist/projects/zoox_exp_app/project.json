@@ -1,0 +1,23 @@
+{
+  "title": "Zoox Experience App",
+  "description": "Interactive touchscreen application for Zoox's CES exhibition, allowing visitors to explore the autonomous robotaxi in 3D.",
+  "tags": ["design", "3d", "interactive", "case-studies", "mobile"],
+  "type": "casestudy",
+  "thumbnail": "ZIVGiPadHandsOn.png",
+  "thumbnailScale": 1.7,
+  "thumbnailPosition": "70%10%",
+  "year": "2024",
+  "order": 1,
+  "sections": [
+    { "type": "image", "src": "2024PreCESPost.png" },
+    { "type": "video", "src": "TouchscreenApp_Demo05.mp4" },
+    { "type": "video", "src": "ZIVGInteractionCES.mp4" },
+    { "type": "image", "src": "MacBook Pro 16_ - 2.png" },
+    { "type": "image", "src": "091B8DA5-38EE-4CAB-9043-1F52A260DB1E.JPG" },
+    { "type": "image", "src": "BEE9FEAB-2324-4957-A7AE-028C541965A0.JPG" },
+    { "type": "image", "src": "UI_References01.png" },
+    { "type": "image", "src": "image.png" },
+    { "type": "image", "src": "ZIVGiPadHandsOn.png" },
+    { "type": "image", "src": "IMG_6377.jpg"}
+  ]
+}
