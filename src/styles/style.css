@@ -567,7 +567,7 @@ video {
    ============================================= */
 
 .case-study {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 32px 20px 80px;
 }
@@ -639,7 +639,12 @@ video {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
   margin-bottom: 20px;
-  max-width: 640px;
+  max-width: 1000px;
+}
+
+.case-study-body .case-study-bold {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .case-study-body figure {

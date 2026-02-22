@@ -54,9 +54,11 @@ export default function CaseStudy() {
               return <h2 key={i}>{section.text}</h2>;
             case 'paragraph':
               return <p key={i}>{section.text}</p>;
+            case 'paragraph-bold':
+              return <p key={i} className="case-study-bold">{section.text}</p>;
             case 'image':
               return (
-                <figure key={i}>
+                <figure key={i} style={section.maxWidth ? { maxWidth: section.maxWidth } : undefined}>
                   <img
                     src={project.allMedia[section.src]}
                     alt={section.caption || section.src}
@@ -72,7 +74,11 @@ export default function CaseStudy() {
                   src={project.allMedia[section.src]}
                   controls
                   playsInline
-                  preload="metadata"
+                  preload={section.autoplay ? 'auto' : 'metadata'}
+                  autoPlay={section.autoplay || false}
+                  muted={section.muted ?? section.autoplay ?? false}
+                  loop={section.autoplay || false}
+                  style={section.maxWidth ? { maxWidth: section.maxWidth } : undefined}
                 />
               );
             default:
