@@ -7,6 +7,9 @@
   "year": "2022",
   "order": 4,
   "sections": [
+    { "type": "heading", "text": "Overview" },
+    { "type": "paragraph", "text": "In recent years, the creative landscape has seen a surge in powerful generative AI tools and a growing fascination with immersive 3D experiences. As artists and designers rush to keep pace with an increasingly digital world, the demand for more intuitive and collaborative methods of producing 3D content is apparent. Despite the progress made by existing platforms, many creatives still struggle to seamlessly generate, refine, and publish their assets in a unified and intuitive workspace." },
+    { "type": "paragraph-bold", "text": "How might we improve the process of generating 3D models?" },
     { "type": "image", "src": "HeroShot.png" },
     { "type": "image", "src": "Screenshot 2022-08-17 073718.png" },
     { "type": "image", "src": "Screen Shot 2022-08-27 at 1.53.26 PM.png" },
