@@ -1,12 +1,12 @@
 {
   "title": "Zoox Exploration Application",
   "description": "An interactive touchscreen application for visitors to explore the autonomous Zoox robotaxi in 3D.",
-  "tags": ["design", "3d", "interactive", "case-studies", "mobile"],
+  "tags": ["design", "3d", "interactive", "case-studies", "mobile", "development"],
   "type": "casestudy",
   "thumbnail": "ZIVGiPadHandsOn.png",
   "thumbnailScale": 1.7,
   "thumbnailPosition": "left 70% top 10%",
-  "year": "2023",
+  "year": "2024",
   "order": 1,
   "sections": [
     { "type": "heading", "text": "Overview" },
