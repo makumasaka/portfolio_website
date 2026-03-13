@@ -1,0 +1,13 @@
+{
+  "title": "Pelagic",
+  "description": "Web prototype of an audio-reactive visualizer for AI agents.",
+  "tags": ["development", "web", "design", "interactive", "personal-project"],
+  "type": "lightbox",
+  "thumbnail": "Screenshot01.png",
+  "year": "2026",
+  "order": 3,
+  "media": [
+    "Screenshot01.png",
+    "voice-visualizer.mp4"
+  ]
+}
