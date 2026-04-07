@@ -1,8 +1,8 @@
 {
   "title": "Robobus",
   "description": "A design concept for a remote monitoring and guidance application with an autonomous bus system.",
-  "tags": ["development", "web", "3d", "design", "interactive", "personal-project"],
-  "type": "lightbox",
+  "tags": ["development", "web", "case-studies", "3d", "design", "interactive", "personal-project"],
+  "type": "casestudy",
   "thumbnail": "Screenshot 2026-03-12 215307.png",
   "year": "2026",
   "order": 4,
