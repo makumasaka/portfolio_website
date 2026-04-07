@@ -1,0 +1,17 @@
+{
+  "title": "Splat Bridge XR",
+  "description": "A web console to generate Gaussian-splat worlds into a Unity XR session over WebSocket.",
+  "tags": ["design", "3d", "case-studies", "interactive", "personal-project", "web", "mobile"],
+  "type": "casestudy",
+  "thumbnail": "HeroShot.png",
+  "thumbnailScale": 1.45,
+  "thumbnailPosition": "center",
+  "year": "2025",
+  "order": 3,
+  "sections": [
+    { "type": "heading", "text": "Overview" },
+    { "type": "paragraph", "text": "A phone-friendly web console and local bridge that drive World Labs Marble jobs and stream the resulting Gaussian-splat worlds into a Unity XR session over WebSocket." },
+    { "type": "image", "src": "webinterface.png" },
+    { "type": "paragraph", "text": "While you’re in XR, a companion device on the same network opens the director UI, submits a Marble generation (text and optional photos), and the bridge downloads the SPZ and notifies Unity so the new splat world can be loaded in-headset without leaving the session." }
+  ]
+}
