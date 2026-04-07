@@ -2,6 +2,7 @@ import rawProjects from 'virtual:projects'
 
 const TAG_LABELS = {
   '3d': '3D',
+  ai: 'AI',
 };
 
 export function formatTag(tag) {

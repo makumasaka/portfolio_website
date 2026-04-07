@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { loadProjects, isVideo } from '../utils/projectLoader'
+import { loadProjects, isVideo, formatTag } from '../utils/projectLoader'
 
 export default function CaseStudy() {
   const { id } = useParams();
@@ -42,7 +42,7 @@ export default function CaseStudy() {
       {project.tags && (
         <div className="case-study-tags">
           {project.tags.map(t => (
-            <span key={t} className="card-tag">{t}</span>
+            <span key={t} className="card-tag">{formatTag(t)}</span>
           ))}
         </div>
       )}
