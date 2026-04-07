@@ -7,7 +7,7 @@
   "thumbnailScale": 1.45,
   "thumbnailPosition": "center",
   "year": "2025",
-  "order": 3,
+  "order": 6,
   "sections": [
     { "type": "heading", "text": "Overview" },
     { "type": "paragraph", "text": "In recent years, the creative landscape has seen a surge in powerful generative AI tools and a growing fascination with immersive 3D experiences. As artists and designers rush to keep pace with an increasingly digital world, the demand for more intuitive and collaborative methods of producing 3D content is apparent. Despite the progress made by existing platforms, many creatives still struggle to seamlessly generate, refine, and publish their assets in a unified and intuitive workspace." },
