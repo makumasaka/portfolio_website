@@ -3,7 +3,7 @@
   "description": "A web console to generate Gaussian-splat worlds into a Unity XR session over WebSocket.",
   "tags": ["design", "3d", "case-studies", "interactive", "personal-project", "web", "mobile"],
   "type": "casestudy",
-  "thumbnail": "HeroShot.png",
+  "thumbnail": "webinterface.png",
   "thumbnailScale": 1.45,
   "thumbnailPosition": "center",
   "year": "2025",
