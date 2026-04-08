@@ -3,15 +3,26 @@
   "description": "A web console to generate Gaussian-splat worlds into a Unity XR session over WebSocket.",
   "tags": ["design", "3d", "case-studies", "interactive", "personal-project", "web", "mobile", "ai"],
   "type": "casestudy",
-  "thumbnail": "webinterface.png",
+  "thumbnail": "Headset_Screenshot01.png",
   "thumbnailScale": 1.45,
   "thumbnailPosition": "center",
   "year": "2025",
   "order": 2,
   "sections": [
-    { "type": "heading", "text": "Overview" },
-    { "type": "paragraph", "text": "A phone-friendly web console and local bridge that drive World Labs Marble jobs and stream the resulting Gaussian-splat worlds into a Unity XR session over WebSocket." },
-    { "type": "image", "src": "webinterface.png" },
-    { "type": "paragraph", "text": "While you’re in XR, a companion device on the same network opens the director UI, submits a Marble generation (text and optional photos), and the bridge downloads the SPZ and notifies Unity so the new splat world can be loaded in-headset without leaving the session." }
+    { "type": "heading", "text": "Problem" },
+    { "type": "paragraph", "text": "Gaussian splats have opened the door for generation of full 3D worlds but the process of iterating on generated assets in XR is a challenge."},
+    { "type": "paragraph-bold", "text": "How do we control and update spatial environments in real time?" },
+    { "type": "image", "src": "Headset_Screenshot03.png" },
+    { "type": "heading", "text": "Solution" },
+    { "type": "paragraph", "text": "Splat Bridge XR is a system that enables live generation and in-session streaming of AI-generated 3D environments into XR." },
+    { "type": "video", "src": "ScreenCapture01.mp4" },
+    { "type": "paragraph", "text": "This system enables live generation and in-session streaming of AI-generated 3D environments into XR. A user can draft a prompt using World Labs Marble, automatically download the result as a Gaussian splat, and load that world inside an active XR session without leaving the session." },
+    { "type": "image", "src": "UI_Screenshot01.png" },
+    { "type": "heading", "text": "Development" },
+    { "type": "paragraph", "text": "The system uses WebSockets to enable real-time, event-driven updates between the bridge and Unity, allowing new worlds to load instantly without restarting the XR session. Gaussian splats (SPZ) were chosen for their fast, photorealistic rendering, while a local bridge architecture minimizes latency and complexity; together with a phone-first control UI, this creates a lightweight, multi-device system where XR is immersive and the web acts as a live control layer."},
+    { "type": "image", "src": "Headset_Screenshot01.png" },
+    { "type": "heading", "text": "Next Steps" },
+    { "type": "paragraph", "text": "If extended, this system could evolve into a full spatial scene director platform with multi-user collaborative world editing, natural-language scene control, and integration with simulation or robotics systems, supported by persistent world state management."},
+    { "type": "image", "src": "Headset_Screenshot02.png" }
   ]
 }
