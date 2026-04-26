@@ -647,6 +647,19 @@ video {
   color: rgba(255, 255, 255, 0.85);
 }
 
+.case-study-body .case-study-list {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin: 0 0 20px 20px;
+  max-width: 1000px;
+  padding-left: 20px;
+}
+
+.case-study-body .case-study-list li {
+  margin-bottom: 8px;
+}
+
 .case-study-body figure {
   margin: 20px 0;
 }

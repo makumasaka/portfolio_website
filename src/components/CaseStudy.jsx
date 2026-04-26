@@ -56,6 +56,14 @@ export default function CaseStudy() {
               return <p key={i}>{section.text}</p>;
             case 'paragraph-bold':
               return <p key={i} className="case-study-bold">{section.text}</p>;
+            case 'list':
+              return (
+                <ul key={i} className="case-study-list">
+                  {section.items?.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              );
             case 'image':
               return (
                 <figure key={i} style={section.maxWidth ? { maxWidth: section.maxWidth } : undefined}>
