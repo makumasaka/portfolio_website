@@ -14,12 +14,17 @@
     { "type": "image", "src": "Screenshot 2022-08-17 073718.png" },
     { "type": "paragraph", "text": "Mars XR Operations Support System (XOSS) is one of the primary testbeds in development for this XR analog. Using one of the world’s most open and advanced real-time 3D rendering tools, Epic Games' Unreal Engine 5). In an effort to expand this simulation, stakeholders opened a portion of the XOSS testbed to the public." },
     { "type": "paragraph", "text": "This publicly released form of the simulation, the MarsXR Engine, includes:" },
-    { "type": "paragraph", "text": "- compatibility with SteamVR headsets (Vive pro, MetaQuest 2, etc.)" },
-    { "type": "paragraph", "text": "- transitioning atmospheric hues from a daytime orange to blueish tones at night" },
-    { "type": "paragraph", "text": "- realistic weather conditions and Martian gravity." },
-    { "type": "paragraph", "text": "- rigged assets like suits, tools, and rovers" },
-    { "type": "paragraph", "text": "- 400 km2 of realistic, researched Mars terrain" },
-    { "type": "image", "src": "NasaXOSSPromo.png", "maxWidth": "600px" },
+    { 
+      "type": "list", 
+      "items": [
+      "compatibility with SteamVR headsets (Vive pro, MetaQuest 2, etc.)",
+      "transitioning atmospheric hues from a daytime orange to blueish tones at night",
+      "realistic weather conditions and Martian gravity.",
+      "rigged assets like suits, tools, and rovers",
+      "400 km2 of realistic, researched Mars terrain"
+      ]
+    },
+    { "type": "image", "src": "NasaXOSSPromo.png" },
     { "type": "paragraph", "text": "Along with this release of the MarsXR Engine, NASA formed an online competition. " },
     { "type": "paragraph-bold", "text": "The challenge: Create a new XR research, development, and testing environment to help prepare for the experiences and situations that will be encountered on Mars." },
     { "type": "image", "src": "Screen Shot 2022-08-27 at 2.33.49 PM.png", "maxWidth": "1000px" },

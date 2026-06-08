@@ -1,6 +1,6 @@
 {
   "title": "Splat Bridge XR",
-  "description": "A web console to generate Gaussian-splat worlds into a Unity XR session over WebSocket.",
+  "description": "A web console for generating and streaming AI-created 3D worlds into XR.",
   "tags": ["design", "3d", "case-studies", "interactive", "personal-project", "web", "mobile", "ai"],
   "type": "casestudy",
   "thumbnail": "Headset_Screenshot08.png",
@@ -9,20 +9,43 @@
   "year": "2025",
   "order": 2,
   "sections": [
-    { "type": "heading", "text": "Problem" },
+    { "type": "image", "src": "Headset_Screenshot08.png" },
+    { "type": "heading", "text": "Overview" },
     { "type": "paragraph", "text": "Gaussian splats have opened the door for generation of full 3D worlds but the process of iterating on generated assets in XR is a challenge."},
-    { "type": "paragraph-bold", "text": "How do we control and update spatial environments in real time?" },
-    { "type": "image", "src": "Headset_Screenshot05.png" },
+    { "type": "paragraph", "text": "AI-generated 3D tools can generate high-quality 3D environments from text and images but the workflow is asynchronous, offline, and disconnected from runtime environments. There is no real-time loop and no control layer for real-time spatial systems." },
+    { "type": "paragraph-bold", "text": "How might we control and update spatial environments in real time?" },
+    { "type": "image", "src": "Headset_Screenshot06.png" },
+    { "type": "heading", "text": "Research & Precedents" },
+    { "type": "paragraph", "text": "This question really came about through research and exploring emerging gaussian splatting workflows. These pipelines remain fragmented and largely offline. Tools like World Labs Marble and Luma AI excel at generating and rendering photorealistic environments, yet lack real-time control and multi-device orchestration." },
+    { "type": "paragraph", "text": "Unity powers immersive experiences but is not designed for live external control or dynamic scene updates during active sessions. As a result, there is no unified system for generating, directing, and updating spatial environments in real time - particularly within XR." },
+    { "type": "image", "src": "Headset_Screenshot07.png" },
     { "type": "heading", "text": "Solution" },
-    { "type": "paragraph", "text": "Splat Bridge XR is a system that enables live generation and in-session streaming of AI-generated 3D environments into XR." },
+    { "type": "paragraph", "text": "Splat Bridge XR is a system that enables live generation and in-session streaming of AI-generated 3D environments into XR. It consists of:" },
+    { 
+      "type": "list", 
+      "items": [
+      "A mobile-first web UI (“director interface”)",
+      "A local orchestration bridge",
+      "A Unity XR runtime",
+      "Headset rendering output in XR"
+      ]
+    },
+    { "type": "image", "src": "Interface02.png" },
+    { "type": "paragraph", "text": "A user can draft a prompt using World Labs Marble, automatically download the result as a Gaussian splat, and load that world inside an active XR session without leaving the session." },
     { "type": "video", "src": "ScreenCapture_Compilation.mp4" },
-    { "type": "paragraph", "text": "This system enables live generation and in-session streaming of AI-generated 3D environments into XR. A user can draft a prompt using World Labs Marble, automatically download the result as a Gaussian splat, and load that world inside an active XR session without leaving the session." },
-    { "type": "image", "src": "UI_Screenshot02.png" },
-    { "type": "heading", "text": "Development" },
-    { "type": "paragraph", "text": "The system uses WebSockets to enable real-time, event-driven updates between the bridge and Unity, allowing new worlds to load instantly without restarting the XR session. Gaussian splats (SPZ) were chosen for their fast, photorealistic rendering, while a local bridge architecture minimizes latency and complexity; together with a phone-first control UI, this creates a lightweight, multi-device system where XR is immersive and the web acts as a live control layer."},
-    { "type": "image", "src": "Headset_Screenshot04.png" },
+    { "type": "heading", "text": "User Flow" },
+    { "type": "paragraph", "text": "After identifying this gap in the process of generating splats - I turned to mapping a user flow to properly scope a spatial control layer. This flow would ultimately guide requirements for design and development." },
+    { "type": "image", "src": "UserFlow01.png" },
+    { "type": "heading", "text": "Prototyping" },
+    { "type": "paragraph", "text": "The system uses WebSockets to enable real-time, event-driven updates between the bridge and Unity, allowing new worlds to load instantly without restarting the XR session."},
+    { "type": "paragraph", "text": "Gaussian splats (SPZ) were chosen for their fast, photorealistic rendering, while a local bridge architecture minimizes latency and complexity. The XR session should never need to restart so the Unity runtime was designed to hot-load new splat environments as they become available. Scene updates are treated as state transitions rather than full reloads, allowing new worlds to appear seamlessly within an ongoing session." },
+    { "type": "image", "src": "Headset_Screenshot05.png" },
+    { "type": "paragraph", "text": "The control interface was intentionally designed for the web as a lightweight, mobile control surface. This reinforces a multi-device interaction model in which the XR headset is optimized for immersion, while the phone acts as a flexible and accessible control layer." },
+    { "type": "image", "src": "Group 1.png" },
+    { "type": "heading", "text": "User Testing" },
+    { "type": "paragraph", "text": "User testing revealed that the React UI needed much larger font than normal mobile and web standards to accommodate the distortion and pixelation that comes with passthrough on XR devices. It also uncovered issues with loading time and lag with gaussian splats on XR headset - there need to be more optimizations. Lastly it was discovered that there should be a way to launch the react app from the Unity editor." },
+    { "type": "image", "src": "Headset_Screenshot01.png" },
     { "type": "heading", "text": "Next Steps" },
-    { "type": "paragraph", "text": "If extended, this system could evolve into a full spatial scene director platform with multi-user collaborative world editing, natural-language scene control, and integration with simulation or robotics systems, supported by persistent world state management."},
-    { "type": "image", "src": "Headset_Screenshot07.png" }
+    { "type": "paragraph", "text": "The next steps are fixing the pain points discovered in user testing and developing the feature to launch the react interface from Unity. Long-term I plan to compile this project into a Unity package - allowing developers to easily implement in-headset world generation and natural-language scene control into their projects. "}
   ]
 }
