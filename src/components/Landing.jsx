@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { loadProjects, getAllTags } from '../utils/projectLoader'
+import { trackEvent } from '../utils/googleAnalytics'
 import Header from './Header'
 import TagFilter from './TagFilter'
 import ProjectCard from './ProjectCard'
@@ -45,21 +46,33 @@ export default function Landing() {
 
   const toggleTag = useCallback((tag) => {
     setActiveTags(prev => {
+      let next;
       if (prev === null) {
-        return new Set([tag]);
-      }
-      const next = new Set(prev);
-      if (next.has(tag)) {
-        next.delete(tag);
+        next = new Set([tag]);
       } else {
-        next.add(tag);
+        next = new Set(prev);
+        if (next.has(tag)) {
+          next.delete(tag);
+        } else {
+          next.add(tag);
+        }
+        if (next.size === allTags.length) next = null;
       }
-      return next.size === allTags.length ? null : next;
+
+      const activeTags = next === null ? 'all' : [...next].sort().join(',');
+      trackEvent('filter_click', { tag, active_tags: activeTags });
+
+      return next;
     });
   }, [allTags.length]);
 
   const toggleAll = useCallback(() => {
-    setActiveTags(prev => prev === null ? new Set() : null);
+    setActiveTags(prev => {
+      const next = prev === null ? new Set() : null;
+      const activeTags = next === null ? 'all' : '';
+      trackEvent('filter_click', { tag: 'all', active_tags: activeTags });
+      return next;
+    });
   }, []);
 
   const isVisible = useCallback((project) => {
@@ -68,6 +81,11 @@ export default function Landing() {
   }, [activeTags]);
 
   const handleCardClick = useCallback((project) => {
+    trackEvent('project_click', {
+      project_id: project.id,
+      project_type: project.type,
+    });
+
     if (project.type === 'casestudy') {
       navigate(`/project/${project.id}`);
     } else {
