@@ -1,4 +1,4 @@
-const MEASUREMENT_ID = 'G-4516LY22E2'
+const MEASUREMENT_ID = 'G-453GLY22CZ'
 
 function isEnabled() {
   return import.meta.env.PROD && typeof window.gtag === 'function'
